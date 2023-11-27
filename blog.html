@@ -1,97 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-    <link rel="stylesheet" type="text/css" href="./assets/CSS/blogStyle.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poppins:ital,wght@0,200;0,400;0,250;0,600;0,700;1,25;1,200;1,300;1,400&display=swap" rel="stylesheet">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" type="text/css" href="./assets/CSS/blogStyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poppins:ital,wght@0,200;0,400;0,250;0,600;0,700;1,25;1,200;1,300;1,400&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
 </head>
 
 <body>
-    <header>
-        <nav>
-        <div class="logo">   <!-- Logo Raíz Café -->
+  <header>
+    <nav>
+      <div class="logo"> <!-- Logo Raíz Café -->
         <a class="logo-link" href="index.html">
-          <img src="logo.png">
+          <img src="logo.png" alt="Logo Raíz Café">
         </a>
-          <div align = "right" ; class="links"> <!-- Navegação entre páginas -->
-            <a href="index.html"> Home |</a>
-            <a href="catalogo.html"> Catálogo |</a> 
-            <a href="testeBlog.html"> Blog |</a>
-            <a href="sobre.html"> Sobre | </a>
-            <a href="suporte.html"> Suporte </a>
-           <!-- <a href="newsletter.html"> NewsLetter | </a> --> <!-- ESPAÇO RESERVADO PARA REDIRECIONAMENTO NEWSLETTER. REMOVER, SE NECESSÁRIO -->
-           </div>
-        </div> 
-      </nav>
-      </header>
-      <hr>
-      <br> <!-- "Pular linha" Crú do HTML -->
-      <br>
-
-      <section align = "center">
-        <h1 id = "blogH1"> Blog </h1>
-
-       <!-- Aqui vai o Carrossel -->
+        <div class="links"> <!-- Navegação entre páginas -->
+          <a href="index.html"> Home </a>
+          <a href="catalogo.html"> Catálogo </a>
+          <a href="Blog.html"> Blog </a>
+          <a href="sobre.html"> Sobre  </a>
+          <a href="suporte.html"> Suporte </a>
+        </div>
+      </div>
+    </nav>
+  </header>
 
 
-    <img src="./assets/imagens/banner-blog.png" id="carrosselBlog">  <!-- ESSE É SÓ O BANNER! -->
-       
+  <h1>Blog</h1>
 
-      </section>
-      <br>
-      <br>
-      <br>
+</head>
 
-      <input type="text" style="float: left;" placeholder="Pesquisar"> <!-- Box de Pesquisa -->
-      <input type="text" style="float: right;" placeholder="Categorizar"> <!-- Box de Categoria -->
+<body>
 
-      <br>
-      <br>
-      <br>
+  <div class="slideshow-container">
 
-      <table>
+    <div class="mySlides fade">
+      <div class="numero-texto">Produtos 1 / 3</div>
+      <img src="./produto2.png" alt="Produto 1">
+      <div class="texto-legenda">Legenda do Slide 1</div>
+    </div>
 
-        <tr>
-          <td id="Artigo1"> <img src="./assets/imagens/gulaDoCafe.png"></td>
-          <td id="Artigo2"> <img src="./assets/imagens/dicasParaFazerCafe.png"></td>
-          <td id="Artigo3"> <img src="./assets/imagens/combinacoesPerfeitas.png"></td>
-        </tr>
+    <div class="mySlides fade">
+      <div class="numero-texto">Produtos 2 / 3</div>
+      <img src="./produto2.png" alt="Produto 2">
+      <div class="texto-legenda">Legenda do Slide 2</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numero-texto">Produtos 3 / 3</div>
+      <img src="./produto3.png" alt="Produto 3">
+      <div class="texto-legenda">Legenda do Slide 3</div>
+    </div>
+
+    <a class="anterior" onclick="mudarSlide(-1)"> ❮ </a>
+    <a class="proximo" onclick="mudarSlide(1)"> ❯ </a>
+
+  </div>
+  <br>
 
 
+  <script> //SCRIPT DO CARROSSEL
 
-        <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr> <!-- Espaçamento crú do HTML -->
-        <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-        <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-        <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    let indiceSlide = 1;
+    mostrarSlides(indiceSlide);
 
-        <tr>
-          <td id="Artigo4">Artigo 4</td>
-          <td id="Artigo5">Artigo 5</td>
-          <td id="Artigo6">Artigo 6</td>
-        </tr>
-        
-          <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr> <!-- Espaçamento crú do HTML -->
-          <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-          <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-          <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    function mudarSlide(n) {
+      mostrarSlides(indiceSlide += n);
+    }
 
-      </table>
+    function slideAtual(n) {
+      mostrarSlides(indiceSlide = n);
+    }
 
+    function mostrarSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let pontos = document.getElementsByClassName("ponto");
+      if (n > slides.length) {
+        indiceSlide = 1
+      }
+      if (n < 1) {
+        indiceSlide = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < pontos.length; i++) {
+        pontos[i].className = pontos[i].className.replace(" ativo");
+      }
+      slides[indiceSlide - 1].style.display = "block";
+      pontos[indiceSlide - 1].className += " ativo";
+    }
+
+
+  </script>
+
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <table>
+
+    <tr>
+      <td id="Artigo1"> <img src="./assets/imagens/gulaDoCafe.png" alt="Artigo 1"></td>
+      <td id="Artigo2"> <img src="./assets/imagens/dicasParaFazerCafe.png" alt="Artigo 2"></td>
+      <td id="Artigo3"> <img src="./assets/imagens/combinacoesPerfeitas.png" alt="Artigo 3"></td>
+    </tr>
+
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+
+    <tr>
+      <td id="Artigo4">Artigo 4</td>
+      <td id="Artigo5">Artigo 5</td>
+      <td id="Artigo6">Artigo 6</td>
+    </tr>
+
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+
+  </table>
+
+ 
+
+    <footer>
+        <p>Raíz Café</p>
+        <p>©️ Todos Direitos Reservados 2023</p>
+        <div class="face">
+        <img src="faceVector.png"></div><div class="insta">
+            <img src="instaVector.png">
+        </div>  
+        <div class="cor">
+            
+        </div>
+
+    </footer>
 
 </body>
 
-<hr>
-
-    <footer align = "center"> <!-- Footer -->
-        <p>Raíz Café</p>
-        <p>©️ Todos Direitos Reservados 2023</p>
-        <img src="instaVector.png">
-        <img src="faceVector.png">
-    </footer>
 </html>
