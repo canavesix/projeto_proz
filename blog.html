@@ -15,57 +15,39 @@
 
 <body>
   <header>
-    <nav>
-      <div class="logo"> <!-- Logo Raíz Café -->
-        <a class="logo-link" href="index.html">
-          <img src="logo.png" alt="Logo Raíz Café">
-        </a>
-        <div class="links"> <!-- Navegação entre páginas -->
-          <a href="index.html"> Home </a>
-          <a href="catalogo.html"> Catálogo </a>
-          <a href="Blog.html"> Blog </a>
-          <a href="sobre.html"> Sobre  </a>
-          <a href="suporte.html"> Suporte </a>
-        </div>
+    <div class="logo">
+    <a class="logo-link" href="index.html">
+    <img src="logo.png">
+    </a>
+
+      <div class="navbar">
+        <a href="index.html"> Home </a> 
+        <a href="catalogo.html"> Catálogo </a> 
+        <a href="blog.html"> Blog </a> 
+        <a href="sobre.html"> Sobre  </a>
+        <a href="suporte.html"> Suporte </a>
       </div>
-    </nav>
+    </div>
   </header>
 
 
   <h1>Blog</h1>
 
+
 </head>
 
 <body>
 
-  <div class="slideshow-container">
-
-    <div class="mySlides fade">
-      <div class="Cafenautas">Cafenautas - ALTERAR E CONFIGURAR</div>
-      <img src="./produto2.png" alt="Produto 0">
-      <div class="texto-legenda">Legenda do Slide 1</div>
+  <div class="carousel-container">
+    <button class="carousel-button prev-button" onclick="prevSlide()">❮</button>
+    <div class="image-list">
+      <!-- Adicione suas imagens aqui -->
+      <img class="image-item" src="./assets/imagens/banner-blog.png" alt="Imagem 2">
+      <img class="image-item" src="./assets/imagens/banner.png" alt="Imagem 2">
+      <!-- Adicione mais imagens conforme necessário -->
     </div>
-
-    <div class="mySlides fade">
-      <div class="numero-texto">Produtos 1 / 3</div>
-      <img src="./produto2.png" alt="Produto 1">
-      <div class="texto-legenda">Legenda do Slide 2</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numero-texto">Produtos 2 / 3</div>
-      <img src="./produto2.png" alt="Produto 2">
-      <div class="texto-legenda">Legenda do Slide 3</div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numero-texto">Produtos 3 / 3</div>
-      <img src="./produto3.png" alt="Produto 3">
-      <div class="texto-legenda">Legenda do Slide 3</div>
-    </div>
-
-    <a class="anterior" onclick="mudarSlide(-1)"> ❮ </a>
-    <a class="proximo" onclick="mudarSlide(1)"> ❯ </a>
+    <button class="carousel-button next-button" onclick="nextSlide()">❯</button>
+  </div>
 
   </div>
   <br>
@@ -73,37 +55,31 @@
 
   <script> //SCRIPT DO CARROSSEL
 
-    let indiceSlide = 1;
-    mostrarSlides(indiceSlide);
+      // Funções para navegar pelos slides
 
-    function mudarSlide(n) {
-      mostrarSlides(indiceSlide += n);
-    }
+  let currentIndex = 0;
 
-    function slideAtual(n) {
-      mostrarSlides(indiceSlide = n);
-    }
+  function showSlide(index) {
+  const imageList = document.querySelector('.image-list');
+  const imageWidth = document.querySelector('.image-item').clientWidth;
+  const newPosition = -index * imageWidth;
+  imageList.style.transform = `translateX(${newPosition}px)`;
+  currentIndex = index;
+}
 
-    function mostrarSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let pontos = document.getElementsByClassName("ponto");
-      if (n > slides.length) {
-        indiceSlide = 1
-      }
-      if (n < 1) {
-        indiceSlide = slides.length
-      }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < pontos.length; i++) {
-        pontos[i].className = pontos[i].className.replace(" ativo");
-      }
-      slides[indiceSlide - 1].style.display = "block";
-      pontos[indiceSlide - 1].className += " ativo";
-    }
+  function prevSlide() {
+  currentIndex = (currentIndex - 1 + getImageCount()) % getImageCount();
+  showSlide(currentIndex);
+}
 
+  function nextSlide() {
+  currentIndex = (currentIndex + 1) % getImageCount();
+  showSlide(currentIndex);
+}
+
+  function getImageCount() {
+  return document.querySelectorAll('.image-item').length;
+}
 
   </script>
 
@@ -161,21 +137,18 @@
 
   </table>
 
- 
+  <footer>
+    <p>Raíz Café</p>
+    <p>©️ Todos Direitos Reservados 2023</p>
+    <div class="socialmedias">
+    <a href="https://www.facebook.com/" target="_blank"><img src="faceVector.png"></a> 
+    <a href="https://www.instagram.com/" target="_blank"><img src="instaVector.png"></a> 
+    </div>  
+    <div class="cor">
+        
+    </div>
 
-    <footer>
-        <p>Raíz Café</p>
-        <p>©️ Todos Direitos Reservados 2023</p>
-        <div class="face">
-        <img src="faceVector.png"></div><div class="insta">
-            <img src="instaVector.png">
-        </div>  
-        <div class="cor">
-            
-        </div>
-
-    </footer>
-
+</footer>
 </body>
 
 </html>
