@@ -1,6 +1,6 @@
 /* HEADER  (TOPO DA PÁGINA) */
 
-h1 {
+h2 {
   font-family: Amatic sc;
   font-size: 55px;
   margin-left: 40px;
@@ -15,7 +15,7 @@ h1 {
 }
 
 .logo img {
-  width: 142px;
+  width: 120px;
   padding-top: 30px;
   padding-left: 22px;
 }
@@ -41,18 +41,12 @@ h1 {
   transform: scale(1.1);
 }
 
-
-.links {
-  align-items: right;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-
 /* BODY */
 body {
   background-color: #d9d9d9;
+  margin: 0;
 }
+
 
 
 /* SESSÃO DE ARTIGOS, POR ID */
@@ -154,7 +148,7 @@ body {
       right: 300px;
     }
 
-      /* Footer */
+/* FOOTER */
 
     footer  {
         text-align: center;
