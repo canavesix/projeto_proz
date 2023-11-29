@@ -65,8 +65,9 @@ body {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
     margin-right: 40px; 
     transition: box-shadow 0.3s ease-in-out;
-    min-height: 732px; 
+    
 }
+
 .cafe-img {
     display: flex;
     justify-content: center;
@@ -121,12 +122,10 @@ body {
     margin-top: 15px;
 }
 
-
 .descricao {
     font-family: poppins;
     font-size: 16px;
     margin-bottom: 20px;
-    min-height: 75px;
 }
 
 .preco {
