@@ -1,5 +1,4 @@
 /* HEADER  (TOPO DA PÁGINA) */
-
 h2 {
   font-family: Amatic sc;
   font-size: 55px;
@@ -49,7 +48,60 @@ body {
 
 
 
+/* SESSÃO DE ARTIGOS - PESQUISA */
+
+h1 {
+  font-size: 50px;
+  font-family: 'Amatic SC', cursive;
+  margin-top: 10px; /* Espaço superior para a caixa de pesquisa */
+  padding: 10px; /* Adicione algum preenchimento interno para melhorar a aparência */
+  border-radius: 20px; /* Torne as bordas mais arredondadas */
+  width: 600px; /* Defina uma largura fixa para a caixa de pesquisa */
+  box-sizing: border-box; /* Inclua a borda e o preenchimento na largura total */
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+
+}
+
+#searchBox  {
+  font-size: 50px;
+  font-family: 'Amatic SC', cursive;
+  margin-top: 10px; /* Espaço superior para a caixa de pesquisa */
+  padding: 10px; /* Adicione algum preenchimento interno para melhorar a aparência */
+  border: 1px solid #ccc; /* Adicione uma borda leve */
+  border-radius: 20px; /* Torne as bordas mais arredondadas */
+  width: 600px; /* Defina uma largura fixa para a caixa de pesquisa */
+  box-sizing: border-box; /* Inclua a borda e o preenchimento na largura total */
+  outline: none; /* Remova a borda de foco padrão no clique */
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+}
+
+#searchBox:focus {
+  border-color: #007BFF; /* Mude a cor da borda ao focar na caixa de pesquisa */
+}
+
+table {
+  margin-top: 20px; /* Espaço superior para a tabela */
+  margin-left: auto; /* Centralize a tabela */
+  margin-right: auto;
+  border-collapse: collapse; /* Remova espaçamento entre as células da tabela */
+}
+
+table, td {
+  border: 1px solid #ddd; /* Adicione bordas à tabela e às células */
+}
+
+img {
+  width: 100%; /* Garanta que as imagens ocupem 100% da largura da célula da tabela */
+  height: auto; /* Mantenha a proporção da imagem */
+}
+
+
 /* SESSÃO DE ARTIGOS, POR ID */
+
 #Artigo1 {
     align-items: left;
     color:red;
