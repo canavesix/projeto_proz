@@ -80,7 +80,7 @@ h1 {
 }
 
 #searchBox:focus {
-  border-color: #007BFF; /* Mude a cor da borda ao focar na caixa de pesquisa */
+  border-color: #511111; /* Mude a cor da borda ao focar na caixa de pesquisa */
 }
 
 table {
@@ -175,6 +175,7 @@ img {
 
     /* Estilize os botões de navegação do carrossel */
     .carousel-button {
+      color:#511111;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
