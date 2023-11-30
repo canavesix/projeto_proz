@@ -53,91 +53,47 @@ body {
     margin: 0;
 }
 
-
-.produto {
-    margin-top: 30px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 20px;
-    max-width: 300px; 
-    text-align: center;
-    background-color: white;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
-    margin-right: 40px; 
-    transition: box-shadow 0.3s ease-in-out;
-    
-}
-
-.cafe-img {
+.sobre1 {
     display: flex;
-    justify-content: center;
+    align-items: center; 
+    margin-left: 30px;
 }
 
-.cafe1 {
-    width: 150px;
-    height: 260px;
+.textos p {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    font-size: 20px;
+    font-family: poppins; 
 }
 
-.produto input {
-    width: 50px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    background-color: #D9D9D9;
+.texto {
+    margin-left: 30px; 
 }
 
-
-
-.produto label {
-    font-size: 18px;
+.intro {
     font-weight: bold;
-    margin-bottom: 10px;
-    display: block;
+    margin-left: 20px; 
+    font-size: 30px;
+    margin-bottom: 30px;
 }
 
-.produto button {
-    background-color: #084829;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    padding: 10px 0;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    font-size: 16px;
-    color: #fff;
-    font-family: 'Poppins';
-    margin-top: 5px;
-}
-
-.produto button:hover {
-    background-color: #511111;
-    transform: scale(1.1);
-}
-
-.selos {
+.sobre2 {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15px;
+    flex-direction: row-reverse; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-right: 30px;
+    margin-top: 60px;
 }
 
-.descricao {
-    font-family: poppins;
-    font-size: 16px;
-    margin-bottom: 20px;
+.texto2 {
+    font-size: 20px;
+    margin-right: 20px;
+    font-family: poppins; 
+    margin-left: 20px;
 }
 
-.preco {
-    font-family: poppins;
-    font-size: 28px;
-    margin-top: 10px;
-    
-}
-
-.stars img {
-    margin-top: 50px;
-}
 
 .banner img {
     width: 100%;
