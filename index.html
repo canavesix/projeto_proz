@@ -8,11 +8,37 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" type=text/css href="../assets/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+ 
   <title>RAIZ CAFÉ - COFFEE SHOP</title>
   <link rel="icon" href="./assets/imagens/LOGOTIPO.png" type="image/png">
-
 </head>
 <body> 
+  <section>
+  <!-- O popup -->
+  <div id="popup" class="popup">
+
+<div class="popup-content">
+   <div class="popup-header">
+   <span class="close" id="closePopupBtn">&times;</span>
+   <h2>Inscreva-se na nossa Newsletter</h2>
+   <p>E fique por dentro de tudo que fala sobre café.</p>
+  </div>  
+
+  <!-- Formulário de inscrição -->
+  <form action="" id="popupNewsletterForm">
+  <input type="text" placeholder="Nome">
+  <input type="email" placeholder="E-mail">
+  <input type="submit" value="QUERO">
+  </form>
+  
+</div>
+</div>
+</section>
+  
   <header>
     <span class="logo">
       <a href="./HTML/index.html">
@@ -22,56 +48,94 @@
     <nav>      
         <ul>
         <li><a href="./index.html">Home</a></li>
-        <li><a href="#">Catálogo</a></li>
+        <li><a href="./catalogo.html">Catálogo</a></li>
         <li><a href="#">Sobre nós</a></li>
-        <li><a href="#">Blog</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./suporte.html">Suporte</a></li>
       </ul>
     </nav>
  </header>
-<body>
+
  <main>
-  <div>
-  <img src="./assets/imagens/banner.png" alt="banner exposição dos cafés">
+<div class="banner">
+  <div class="banner-text">
+      <p class="section-title">Raiz Café</p>
+      <p class="section-subtitle">Agricultura familiar</p>
+      <img src="./assets/imagens/logo-banner.png" alt="logo Raiz café" width="200" height="200">
+  </div>  
+
+  <div class="banner-image">
+    <img src="./assets/imagens/layoutprodutos.png" alt="embalagem de café ilustrada">
+ </div>
+</div>
+
+</main>
+
+<div class="product-list"> 
+   
+  <div class="slick-carousel">
+    <section>
+      <div class="produto">
+      <div class="cafe-img">      
+      <img src="./assets/imagens/café-vale-douro.png" class="cafe1">
+      </div>
+      <div class="selos">
+      <img src="./assets/imagens/icon-prêmio.png" class="certificado">
+      <img src="./assets/imagens/icon-frete-gratis.png" class="frete">
+      </div>
+      <p class="descricao">Raíz Café Gourmet - Vale D'ouro 250GR</p>
+      <p class="preco"><strong>R$30,00</strong></p>
+      <label for="">Quantidade: </label>
+      <input id="" type="number" value="1" min="1">
+      <button type="submit" name="">Comprar</button>
+      </div>
+  </section>
+
+  <section>
+    <div class="produto">
+    <div class="cafe-img">      
+    <img src="./assets/imagens/cafereservafamilia.png" class="cafe1">
+    </div>
+    <div class="selos">
+    <img src="./assets/imagens/icon-prêmio.png" class="certificado">
+    <img src="./assets/imagens/icon-frete-gratis.png" class="frete">
+    </div>
+    <p class="descricao">Raíz Café Gourmet - reserva da Família 250GR</p>
+    <p class="preco"><strong>R$30,00</strong></p>
+    <label for="">Quantidade: </label>
+    <input id="" type="number" value="1" min="1">
+    <button type="submit" name="">Comprar</button>
+    </div>
+</section>
+
+<section>
+  <div class="produto">
+  <div class="cafe-img">      
+  <img src="./assets/imagens/cafe-montanha-dourada.png" class="cafe1">
   </div>
-
-  <div class="product card">
-    <img src="./assets/imagens/cafereservafamilia.png" alt="embalagem de café ilustração da fazenda" width="117" height="125">
-    <img src="./assets/imagens/icon-prêmio.png" alt="Ícone Prêmio">
-    <img src="./assets/imagens/icon-frete-gratis.png" alt="Ícone Frete Grátis">
-    <p>Raiz Café Gourmet - reserva da Família  250GR</p>
-    <p>R$ 30,00</p>    
-    <label for="quantidade">Quantidade:</label>
-    <input type="number" id="quantidade" name="quantidade" min="1" value="1">
-    <button type="button" onclick="comprar()">Comprar</button>
+  <div class="selos">
+  <img src="./assets/imagens/icon-prêmio.png" class="certificado">
+  <img src="./assets/imagens/icon-frete-gratis.png" class="frete">
   </div>
-
-  <div>
-    <img src="./assets/imagens/cafe-montanha-dourada.png" alt="emabalagem de café com ilustração da montanha" width="117" height="125">
-    <img src="./assets/imagens/icon-prêmio.png" alt="Ícone Prêmio">
-    <img src="./assets/imagens/icon-frete-gratis.png" alt="Ícone Frete Grátis">
-    <p>Raiz Café Gourmet - Montanha Dourada  250GR</p>
-    <p>R$ 30,00</p>
-    <label for="quantidade">Quantidade:</label>
-    <input type="number" id="quantidade" name="quantidade" min="1" value="1">
-    <button type="button" onclick="comprar()">Comprar</button>
+  <p class="descricao">Raíz Café Gourmet - Montanha Dourada 250GR</p>
+  <p class="preco"><strong>R$30,00</strong></p>
+  <label for="">Quantidade: </label>
+  <input id="" type="number" value="1" min="1">
+  <button type="submit" name="">Comprar</button>
   </div>
+</section>
+</div>  
 
-  <div>
-    <img src="./assets/imagens/café-vale-douro.png" alt="emabalagem de café com ilustração do vale" width="117" height="125">
-    <img src="./assets/imagens/icon-prêmio.png" alt="Ícone Prêmio">
-    <img src="./assets/imagens/icon-frete-gratis.png" alt="Ícone Frete Grátis">    
-   <p>Raiz Café Especial - Vale D'ouro  250GR</p>
-   <p>R$ 30,00</p>
-   <label for="quantidade">Quantidade:</label>
-   <input type="number" id="quantidade" name="quantidade" min="1" value="1">
-   <button type="button" onclick="comprar()">Comprar</button>
-  </div>
+<footer>
+  <p>Raiz Café - Agricultura familiar</p>
+  <p> ©️ Todos Direitos Reservados 2023</p>
 
- </main>
+  <div class="socialmedias">
+    <a href="https://www.facebook.com/" target="_blank"><img src="faceVector.png"></a> 
+    <a href="https://www.instagram.com/" target="_blank"><img src="instaVector.png"></a> 
+  </div> 
+</footer>
 
-  <footer>
-    <p>Raiz Café - Agricultura familiar</p>
-    <p> ©️ Todos Direitos Reservados 2023</p>
-  </footer>
+<script src="./assets/script.js"></script>
 </body>
 </html>
