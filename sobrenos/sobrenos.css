@@ -1,0 +1,133 @@
+h2 {
+    font-family: Amatic sc;
+    font-size: 55px;
+    margin-left: 40px;
+}
+
+.geral {
+    display: flex;
+    margin-left: 40px;
+    
+}
+
+.logo {
+    background-color:#511111;
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 120px;
+    padding-top: 30px;
+    padding-left: 22px;
+    
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+
+.navbar a {
+    color:#FFFFFF;
+    text-decoration: none;
+    margin-right: 25px;
+    font-size: 25px;
+    padding-top: 80px;
+    transition: background-color 0.3s;
+    font-family: poppins;
+    
+}
+
+.navbar a:hover {
+    color: #F8C92C;
+    transform: scale(1.1);
+}
+
+body {
+    background-color: #d9d9d9;
+    margin: 0;
+}
+
+.sobre1 {
+    display: flex;
+    align-items: center; 
+    margin-left: 30px;
+}
+
+.textos p {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    font-size: 20px;
+    font-family: poppins; 
+}
+
+.texto {
+    margin-left: 30px; 
+}
+
+.intro {
+    font-weight: bold;
+    margin-left: 20px; 
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.sobre2 {
+    display: flex;
+    flex-direction: row-reverse; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-right: 30px;
+    margin-top: 60px;
+}
+
+.texto2 {
+    font-size: 20px;
+    margin-right: 20px;
+    font-family: poppins; 
+    margin-left: 20px;
+}
+
+
+.banner img {
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    height: 700px;
+    
+}
+
+footer  {
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+
+.socialmedias {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 20px;
+    margin-bottom: 10px; 
+}
+.socialmedias img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px; 
+}
+
+
+.cor {
+    border-bottom: 180px solid #511111;
+    max-width: 100%;
+    max-height: 180px;
+    border-top: 2px solid #511111;
+    
+}

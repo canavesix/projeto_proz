@@ -1,109 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo</title>
-    <link rel="stylesheet" type="text/css" href="">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <link rel="stylesheet" type="text/css" href="./blog/blogStyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+</head>
+
+  <header>
+    <div class="logo">
+    <a class="logo-link" href="index.html">
+    <img src="logo.png">
+    </a>
+
+      <div class="navbar">
+        <a href="index.html"> Home </a> 
+        <a href="catalogo.html"> Catálogo </a> 
+        <a href="blog.html"> Blog </a> 
+        <a href="sobre.html"> Sobre  </a>
+        <a href="suporte.html"> Suporte </a>
+      </div>
+    </div>
+  </header>
+
+  <h2>Blog</h2>
+
 </head>
 
 <body>
-    <header>
-        <nav>
-        <div class="logo">   <!-- Logo Raíz Café -->
-        <a class="logo-link" href="home.html">
-          <img src="logo.png">
-        </a>
-          <div align = "right" ; class="links"> <!-- Navegação entre páginas -->
-            <a href="home.html"> Home |</a>
-            <a href="catalogo.html"> Catálogo |</a> 
-            <a href="blog.html"> Blog |</a>
-            <a href="tela6.html"> Sobre | <git /a>
-            <a href="tela6.html"> NewsLetter </a> 
-           </div>
-        </div> 
-      </nav>
-      </header>
-      <hr>
-      <br> <!-- "Pular linha" Crú do HTML -->
-      <br>
-      <br>
-      <section align = "center">
-        <h1> << (Carrossel) Blog/Comentários de clientes (Carrossel) >> </h1> <!-- Aqui vai o Carrossel -->
-      </section>
-      <br>
-      <br>
-      <br>
-      <hr>
 
-      <input type="text" style="float: left;" placeholder="Pesquisar"> <!-- Box de Pesquisa -->
-      <input type="text" style="float: right;" placeholder="Categorizar"> <!-- Box de Categoria -->
 
-      <br>
-      <br>
-      <br>
-
-      <table>
-
-        <tr>
-          <td style="font-size: 100px; padding-left: 10px; padding-right: 250px;">Artigo 1</td>
-          <td style="font-size: 100px; padding-left: 20px; padding-right: 250px;">Artigo 2</td>
-          <td style="font-size: 100px; padding-left: 30px; padding-right: 250px;">Artigo 3</td>
-        </tr>
-
-        <tr>
-          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Texto sobre café no artigo 1</td> <!-- Texto com espaçamento crú do HTML -->
-          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Texto sobre café no artigo 2</td>
-          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Texto sobre café no artigo 3</td>
-        </tr>
-
-        <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr> <!-- Espaçamento crú do HTML -->
-        <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-        <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-        <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-
-        <tr>
-          <td style="font-size: 100px; padding-left: 10px; padding-right: 250px;">Artigo 4</td>
-          <td style="font-size: 100px; padding-left: 20px; padding-right: 250px;">Artigo 5</td>
-          <td style="font-size: 100px; padding-left: 30px; padding-right: 250px;">Artigo 6</td>
-        </tr>
-
-        <tr>
-          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Descrição do Artigo 4</td> <!-- Texto com espaçamento crú do HTML -->
-          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Descrição do Artigo 5</td>
-          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Descrição do Artigo 6</td>
-        </tr>
-        
-          <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr> <!-- Espaçamento crú do HTML -->
-          <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-          <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
-          <tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+  <div class="carousel-container">
+    <button class="carousel-button prev-button" onclick="prevSlide()">❮</button>
+    <div class="image-list">
+      <!-- Adicione imagens aqui -->
+      <img class="image-item" src="./assets/imagens/banner-blog.png" alt="Imagem 2">
+      <img class="image-item" src="./assets/imagens/banner.png" alt="Imagem 2">
+      <img class="image-item" src="./footer.png" alt="Imagem 3">
+      <!-- Adicione mais imagens conforme necessário -->
+    </div>
+    <button class="carousel-button next-button" onclick="nextSlide()">❯</button>
+  </div>
   
-          <tr>
-            <td style="font-size: 100px; padding-left: 10px; padding-right: 250px;">Artigo 7</td>
-            <td style="font-size: 100px; padding-left: 20px; padding-right: 250px;">Artigo 8</td>
-            <td style="font-size: 100px; padding-left: 30px; padding-right: 250px;">Artigo 9</td>
-          </tr>
+  
+  <!-- Referencie o novo arquivo JavaScript -->
+  <script src="./blog/blogJavaScript.js"></script>
 
-          <tr>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Descrição do Artigo 7</td> <!-- Texto com espaçamento crú do HTML -->
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Descrição do Artigo 8</td>
-            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Descrição do Artigo 9</td>
-          </tr>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+    <h1>Faça sua pesquisa nos artigos</h1>
+
+  <!-- Adicione um campo de pesquisa -->
+  <input type="text" id="searchBox" placeholder="Procurar...">
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+
+  <table>
+    <!-- Conteúdo da tabela aqui -->
+  
+
+    <tr>
+      <td id="Artigo1"> <img src="./assets/imagens/gulaDoCafe.png" alt="Artigo 1"></td>
+      <td id="Artigo2"> <img src="./assets/imagens/dicasParaFazerCafe.png" alt="Artigo 2"></td>
+      <td id="Artigo3"> <img src="./assets/imagens/combinacoesPerfeitas.png" alt="Artigo 3"></td>
+    </tr>
+
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+
+    <tr>
+      <td id="Artigo4"><img src="./assets/imagens/Artigo4.png" alt="Artigo 4"></td>
+      <td id="Artigo5"><img src="./assets/imagens/artigo5.png" alt="Artigo 5"></td>
+      <td id="Artigo6"><img src="./assets/imagens/artigo6.png" alt="Artigo 6"></td>
+    </tr>
+
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+
+  </table>
+  
+
+<footer>
+    <p>Raíz Café</p>
+    <p>©️ Todos Direitos Reservados 2023</p>
+    <div class="socialmedias">
+    <a href="https://www.facebook.com/" target="_blank"><img src="faceVector.png"></a> 
+    <a href="https://www.instagram.com/" target="_blank"><img src="instaVector.png"></a> 
+    </div>  
+    <div class="cor">
         
-      </table>
+    </div>
 
-
+</footer>
 </body>
-<hr>
 
-    <footer align = "center"> <!-- Footer -->
-        <p>Raíz Café</p>
-        <p>©️ Todos Direitos Reservados 2023</p>
-        <img src="instaVector.png">
-        <img src="faceVector.png">
-    </footer>
 </html>
