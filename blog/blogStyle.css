@@ -54,14 +54,33 @@ h1 {
   font-size: 50px;
   font-family: 'Amatic SC', cursive;
   margin-top: 10px; /* Espaço superior para a caixa de pesquisa */
-  padding: 10px; /* Adicione algum preenchimento interno para melhorar a aparência */
-  border-radius: 20px; /* Torne as bordas mais arredondadas */
+  padding: 10px; /* Adiciona preenchimento interno para melhorar a aparência */
+  border-radius: 20px; /* Tornar bordas mais arredondadas */
   width: 600px; /* Defina uma largura fixa para a caixa de pesquisa */
   box-sizing: border-box; /* Inclua a borda e o preenchimento na largura total */
   margin-right: auto;
   margin-left: auto;
   display: block;
 
+}
+
+#searchButton {
+  font-family: 'Amatic SC', cursive;
+  font-size: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  padding: 10px 20px;
+  background-color: #511111; /* Cor de fundo verde */
+  color: white; /* Cor do texto branco */
+  border: none; /* Remover a borda */
+  border-radius: 25px; /* Adicionar bordas mais arredondadas */
+  cursor: pointer; /* Mudar o cursor ao passar o mouse */
+  transition: background-color 0.3s; /* Adicionar transição suave à mudança de cor de fundo */
+}
+
+#searchButton:hover {
+  background-color: grey; /* Mudar a cor de fundo quando o mouse passa por cima */
 }
 
 #searchBox  {
@@ -77,6 +96,10 @@ h1 {
   margin-right: auto;
   margin-left: auto;
   display: block;
+}
+
+.highlight {  /*teste de pesquisa bem sucedida */
+  background-color: yellow; /* Cor de destaque, pode ajustar conforme necessário */
 }
 
 #searchBox:focus {
@@ -178,8 +201,8 @@ img {
       color:#511111;
       position: absolute;
       top: 50%;
-      transform: translateY(-50%);
-      font-size: 80px;
+      transform: translateY(-10%);
+      font-size: 150px;
       background: none;
       border: none;
       opacity: 0.7;

@@ -60,15 +60,14 @@
     <h1>Faça sua pesquisa nos artigos</h1>
 
   <!-- Adicione um campo de pesquisa -->
-  <input type="text" id="searchBox" placeholder="Procurar...">
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+  <input type="text" id="searchBox" onkeydown="handleKeyPress(event)" placeholder="Procurar...">
+  <td>&nbsp;</td>
+  <button id="searchButton" onclick="searchPage()">Pesquisar</button>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
 
   <table>
-    <!-- Conteúdo da tabela aqui -->
-  
+    <!-- Conteúdo dos artigos aqui -->
 
     <tr>
       <td id="Artigo1"> <img src="./assets/imagens/gulaDoCafe.png" alt="Artigo 1"></td>
