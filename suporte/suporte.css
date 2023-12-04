@@ -1,4 +1,4 @@
-h2 {
+h3 {
     font-family: Amatic sc;
     font-size: 55px;
     margin-left: 40px;
@@ -48,54 +48,15 @@ h2 {
     transform: scale(1.1);
 }
 
+
 body {
-    background-color: #d9d9d9;
     margin: 0;
-    background-image: url("bkgsobrenos.png");
+    font-family: 'poppins';
     background-size: cover;
     background-repeat: no-repeat;
+    background: url("cafesuportebk.png");
 }
 
-.sobre1 {
-    display: flex;
-    align-items: center; 
-    margin-left: 30px;
-}
-
-.textos p {
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
-    font-size: 20px;
-    font-family: poppins; 
-}
-
-.texto {
-    margin-left: 30px; 
-}
-
-.intro {
-    font-weight: bold;
-    margin-left: 20px; 
-    font-size: 30px;
-    margin-bottom: 30px;
-}
-
-.sobre2 {
-    display: flex;
-    flex-direction: row-reverse; 
-    justify-content: space-between; 
-    align-items: center; 
-    margin-right: 30px;
-    margin-top: 60px;
-}
-
-.texto2 {
-    font-size: 20px;
-    margin-right: 20px;
-    font-family: poppins; 
-    margin-left: 20px;
-}
 
 
 .banner img {
