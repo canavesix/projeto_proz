@@ -3,6 +3,8 @@
       // Funções para navegar pelos slides
 
 let currentIndex = 0;
+let intervalId; // Teste de trocar imagens auto
+
 
 function showSlide(index) {
   const imageList = document.querySelector('.image-list');
@@ -28,6 +30,10 @@ function getImageCount() {
 
 window.prevSlide = prevSlide;
 window.nextSlide = nextSlide;
+
+
+intervalId = setInterval(nextSlide, 5000); // Intervalo para troca
+showSlide(currentIndex);  // Intervalo para troca
 
 
 // FUNCTION - REALIZAR PESQUISA NA PÁGINA
