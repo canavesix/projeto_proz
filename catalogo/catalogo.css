@@ -53,20 +53,42 @@ body {
     margin: 0;
 }
 
+.geral {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.produto-container {
+    margin-top: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 185px;
+    max-width: 200px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-right: 40px;
+    transition: box-shadow 0.3s ease-in-out;
+    min-height: 700px;
+    margin-bottom: 20px; 
+}
 
 .produto {
     margin-top: 30px;
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 20px;
-    width: 185px; 
-    max-width: 200px;
+    width: 250px; 
+    max-width: 600px;
     text-align: center;
     background-color: white;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
     margin-right: 40px; 
     transition: box-shadow 0.3s ease-in-out;
     min-height: 700px; 
+    margin-bottom: 20px;
 }
 .cafe-img {
     display: flex;
