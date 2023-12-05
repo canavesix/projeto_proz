@@ -95,7 +95,7 @@ function realizarPesquisa() {
   });
 
   if (!found) {
-      alert('Termo de pesquisa não encontrado nas linhas da tabela.');
+      alert('Termo de pesquisa não encontrado.');
   }
 }
 
