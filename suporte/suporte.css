@@ -105,8 +105,7 @@ div{
 .formulario {
     display: flex;
     justify-content: space-between;
-     
-   
+    font-family: poppins;
     padding: 20px; 
 }
 
@@ -126,7 +125,17 @@ div{
 }
 
 .formulario button {
-    margin-top: 10px;
+    background-color: #084829;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Poppins';
+    margin-top: 5px;
 }
 
 .texto2 p {
