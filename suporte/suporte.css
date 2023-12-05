@@ -1,13 +1,12 @@
 h3 {
     font-family: Amatic sc;
     font-size: 55px;
-    margin-left: 40px;
+    margin-left: 52px;
 }
 
 .geral {
     display: flex;
     margin-left: 40px;
-    
 }
 
 .logo {
@@ -103,7 +102,33 @@ div{
 
 }
 
+.formulario {
+    display: flex;
+    justify-content: space-between;
+     
    
+    padding: 20px; 
+}
 
 
+.formulario .teste {
+   margin-right: 900px;
+   border: 1px solid black;
+   padding: 30px;
+   border-radius: 4px;
+}
 
+.formulario label,
+.formulario input,
+.formulario textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.formulario button {
+    margin-top: 10px;
+}
+
+.texto2 p {
+    margin-left: 50px;
+}
