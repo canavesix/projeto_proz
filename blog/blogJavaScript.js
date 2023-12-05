@@ -1,6 +1,6 @@
 //SCRIPT DO CARROSSEL
 
-      // Funções para navegar pelos slides
+  // Funções para navegar pelos slides
 
 let currentIndex = 0;
 let intervalId; // Teste de trocar imagens auto
@@ -36,6 +36,7 @@ intervalId = setInterval(nextSlide, 5000); // Intervalo para troca
 showSlide(currentIndex);  // Intervalo para troca
 
 
+
 // FUNCTION - REALIZAR PESQUISA NA PÁGINA
 
 /*
@@ -69,7 +70,7 @@ function realizarPesquisa() {
 
 // SEARCH DA PÁGINA - TESTE 3
 
-function searchPage() {
+  function searchPage() {
   // Obter o valor de pesquisa do input
   var searchTerm = document.getElementById('searchBox').value.toLowerCase();
 
@@ -104,3 +105,4 @@ function handleKeyPress(event) {
       searchPage();
   }
 }
+
