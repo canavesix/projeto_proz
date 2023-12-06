@@ -5,43 +5,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog</title>
-  <link rel="stylesheet" type="text/css" href="./blog/blogStyle.css">
+  <link rel="stylesheet" type="text/css" href="/blog/blogStyle.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
-</head>
+  <body>
+    <header>
+        <div class="logo">
+        <a class="logo-link" href="/index/index.html">
+        <img src="\assets\logo.png">
+        </a>
 
-  <header>
-    <div class="logo">
-    <a class="logo-link" href="index.html">
-    <img src="logo.png">
-    </a>
-
-      <div class="navbar">
-        <a href="index.html"> Home </a> 
-        <a href="catalogo.html"> Catálogo </a> 
-        <a href="blog.html"> Blog </a> 
-        <a href="sobre.html"> Sobre  </a>
-        <a href="suporte.html"> Suporte </a>
-      </div>
+    <div class="navbar">
+            <a href="\index\index.html"> Home </a> 
+            <a href="\catalogo\catalogo.html"> Catálogo </a> 
+            <a href="\blog\blog.html"> Blog </a> 
+            <a href="\sobrenos\sobre.html"> Sobre  </a>
+            <a href="\suporte\suporte.html"> Suporte </a>
+        </div>
     </div>
-  </header>
+    </header>
+    
+    <h2>Catálogo</h2>
+    
+    <div class="geral">
 
-  <h2>Blog</h2>
-
-</head>
-
-<body>
+    <section>
 
 
   <div class="carousel-container">
     <button class="carousel-button prev-button" onclick="prevSlide()">❮</button>
     <div class="image-list">
       <!-- Adicione imagens aqui -->
-      <img class="image-item" src="./assets/imagens/banner-blog.png" alt="Imagem 2">
-      <img class="image-item" src="./assets/imagens/banner.png" alt="Imagem 2">
-      <img class="image-item" src="./footer.png" alt="Imagem 3">
+      <img class="image-item" src="/assets/banner-blog.png" alt="Imagem 2">
+      <img class="image-item" src="/assets/banner.png" alt="Imagem 2">
+      <img class="image-item" src="/assets//footer.png" alt="Imagem 3">
       <!-- Adicione mais imagens conforme necessário -->
     </div>
     <button class="carousel-button next-button" onclick="nextSlide()">❯</button>
@@ -49,7 +48,7 @@
   
   
   <!-- Referencie o novo arquivo JavaScript -->
-  <script src="./blog/blogJavaScript.js"></script>
+  <script src="/blog/blogJavaScript.js"></script>
   
 
   <br>
@@ -71,9 +70,9 @@
     <!-- Conteúdo dos artigos aqui -->
 
     <tr>
-      <td id="Artigo1"> <img src="./assets/imagens/gulaDoCafe.png" alt="Artigo 1"></td>
-      <td id="Artigo2"> <img src="./assets/imagens/dicasParaFazerCafe.png" alt="Artigo 2"></td>
-      <td id="Artigo3"> <img src="./assets/imagens/combinacoesPerfeitas.png" alt="Artigo 3"></td>
+      <td id="Artigo1"> <img src="/assets/gulaDoCafe.png" alt="Artigo 1"></td>
+      <td id="Artigo2"> <img src="/assets/dicasParaFazerCafe.png" alt="Artigo 2"></td>
+      <td id="Artigo3"> <img src="/assets/combinacoesPerfeitas.png" alt="Artigo 3"></td>
     </tr>
 
     <tr>
@@ -93,9 +92,9 @@
     </tr>
 
     <tr>
-      <td id="Artigo4"><img src="./assets/imagens/Artigo4.png" alt="Artigo 4"></td>
-      <td id="Artigo5"><img src="./assets/imagens/artigo5.png" alt="Artigo 5"></td>
-      <td id="Artigo6"><img src="./assets/imagens/artigo6.png" alt="Artigo 6"></td>
+      <td id="Artigo4"><img src="/assets/Artigo4.png" alt="Artigo 4"></td>
+      <td id="Artigo5"><img src="/assets/artigo5.png" alt="Artigo 5"></td>
+      <td id="Artigo6"><img src="/assets/artigo6.png" alt="Artigo 6"></td>
     </tr>
 
     <tr>
@@ -120,17 +119,15 @@
   </table>
   
 
-<footer>
-    <p>Raíz Café</p>
-    <p>©️ Todos Direitos Reservados 2023</p>
-    <div class="socialmedias">
-    <a href="https://www.facebook.com/" target="_blank"><img src="faceVector.png"></a> 
-    <a href="https://www.instagram.com/" target="_blank"><img src="instaVector.png"></a> 
-    </div>  
-    <div class="cor">
-        
+  <footer>
+    <div>
+        <p>Raíz Café</p>
+        <p>©️ Todos Direitos Reservados 2023</p>
+        <div class="socialmedias">
+            <a href="https://www.facebook.com/" target="_blank"><img src="\assets\faceVector.png"></a> 
+            <a href="https://www.instagram.com/" target="_blank"><img src="\assets\instaVector.png"></a> 
+        </div>
     </div>
-
 </footer>
 </body>
 
