@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let popupNewsletterForm = document.getElementById('popupNewsletterForm');
     popupNewsletterForm.addEventListener('submit', function (event) {
         event.preventDefault(); // Impede o envio padrão do formulário
-        alert('Formulário do Popup enviado!'); 
+        alert('E-mail enviado, obrigado :D !'); 
         // Opcional: Fechar o popup após enviar o formulário
         popup.style.display = 'none';
     });

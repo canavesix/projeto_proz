@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="/suporte/suporte.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+    <script src="suporte.js" defer></script>
 </head>
 <body>
     <header>
@@ -39,18 +40,26 @@
             </p>
         </div>
     
-    <div class="teste">
+        <div class="teste">
             <h5>Via E-mail</h5>
-            <form action="" method="">
-                <label for="name">Nome:</label>
-                <input type="text" id="name" name="name">
+            <form action="">
+                <label for="username">*Nome:</label>
+                <input type="text" id="username" name="username">
+                <p id="username-helper"></p>
+
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email">
+                <p id ="email-helper"></p>
+
                 <label for="celular">Celular:</label>
                 <input type="text" id="celular" name="celular">
+                <p id ="celular-helper"></p>
+
                 <label for="mensagem">Mensagem:</label>
                 <textarea name="mensagem" id="mensagem" cols="50" rows="20"></textarea>
-                <button type="submit">Enviar</button>
+                <p id="mensagem-helper"></p>
+                
+                <button type="submit" id="enviarBtn">Enviar</button>
             </form>
         </div>
     </div>
