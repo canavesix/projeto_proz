@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
             } else {
                 alert('O campo nome não pode conter números.');
             }
-            return; // Evita fechar o popup se houver erros nos campos
+            return; // coloquei essa função para não fechar o popup quando alguma informação estiver errada, dando a opção do usuário corrigir sem fechar.
         }
 
         alert('E-mail enviado, obrigado :D !');
