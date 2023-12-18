@@ -61,6 +61,35 @@
   
 }
 
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+  width: 50%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  background-color: #084829;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  
+}
+
+input[type="submit"]:hover {
+  background-color: #511111;
+}
+
+label {
+  margin-bottom: 5px;
+  display: block;
+  font-weight: bold;
+  
+}
 
 
 .close {

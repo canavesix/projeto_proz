@@ -18,22 +18,30 @@ document.addEventListener('DOMContentLoaded', function () {
         popup.style.display = 'none';
     });
 
-    // Fechar o popup se clicar fora dele
-    window.addEventListener('click', function (event) {
-        if (event.target === popup) {
-            popup.style.display = 'none';
-        }
-    });
-
     // Enviar formulário da newsletter (no popup)
-    let popupNewsletterForm = document.getElementById('popupNewsletterForm');
-    popupNewsletterForm.addEventListener('submit', function (event) {
-        event.preventDefault(); // Impede o envio padrão do formulário
-        alert('E-mail enviado, obrigado :D !'); 
-        // Opcional: Fechar o popup após enviar o formulário
+        let popupNewsletterForm = document.getElementById('popupNewsletterForm');
+        popupNewsletterForm.addEventListener('submit', function (event) {
+        event.preventDefault(); 
+
+        let nameNewsInput = document.getElementById("nameNews");
+        let nameValue = nameNewsInput.value.trim(); //esse "trim()"" serve para remover espaços em branco que o usuário pode colocar sem querer
+        
+
+        // essa função é a mesma que tem na tela de suporte, pra não deixar passar nome com menos de 3 caracters e nem com números
+        if (nameValue.length < 3 || /\d/.test(nameValue)) {
+            if (nameValue.length < 3) {
+                alert('Por favor, insira um nome com pelo menos 3 caracteres.');
+            } else {
+                alert('O campo nome não pode conter números.');
+            }
+            return; // Evita fechar o popup se houver erros nos campos
+        }
+
+        alert('E-mail enviado, obrigado :D !');
+
         popup.style.display = 'none';
     });
-});
+
 
 
 //CARROSSEL
@@ -51,6 +59,4 @@ $(document).ready(function () {
 
 
 
-  
-  
-  
+});

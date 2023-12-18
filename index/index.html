@@ -12,7 +12,7 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="\index\script.js"></script>
+  <script src="script.js"></script>
  
   <title>RAIZ CAFÉ - COFFEE SHOP</title>
   <link rel="icon" href="\assets\LOGOTIPO.png" type="image/png">
@@ -22,7 +22,7 @@
   <!-- O popup -->
   <div id="popup" class="popup">
 
-<div class="popup-content">
+  <div class="popup-content">
    <div class="popup-header">
    <span class="close" id="closePopupBtn">&times;</span>
    <h2>Inscreva-se na nossa Newsletter</h2> 
@@ -31,14 +31,22 @@
 
   <!-- Formulário de inscrição -->
   <form action="" id="popupNewsletterForm">
-  <input type="text" placeholder="Nome">
-  <input type="email" placeholder="E-mail">
+
+
+  <label for="nameNews">Nome:</label> 
+  <input type="text" id="nameNews" name="nameNews" placeholder="Nome">
+  <p id="nameNews-helper"></p>
+
+  <label for="emailNews">E-mail:</label>
+  <input type="email" id="emailNews" name="emailNews" placeholder="E-mail" >
+  <p id="emailNews-helper"></p>
   <input type="submit" value="QUERO">
+  
   </form>
   
-</div>
-</div>
-</section>
+  </div>
+  </div>
+  </section>
   
   <header>
     <span class="logo">
