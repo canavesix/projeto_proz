@@ -43,7 +43,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
-
 //CARROSSEL
 
 $(document).ready(function () {
