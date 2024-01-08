@@ -54,6 +54,8 @@ body {
     background: url("/assets/cafesuportebk.png") no-repeat;
     background-size: cover;
     height: 100vh;
+    background-color: #d9d9d9;
+    
 }
 
 
@@ -159,6 +161,11 @@ footer {
     
 }
 
+footer p {
+    padding-top: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+  
 
 .socialmedias {
     margin-top: 30px;
