@@ -43,19 +43,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
-//CARROSSEL
-
-$(document).ready(function () {
-    $('.slick-carousel').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: true,
-      dots: true,
-      infinite: false,
+    $(document).ready(function(){
+        $('.slick-carousel').slick({
+          
+          slidesToShow: 1,
+          autoplay: true,
+          autoplaySpeed: 4000,
+          arrows: true,
+          dots: true
+        });
     });
-  });
-  
-
-
-
 });
