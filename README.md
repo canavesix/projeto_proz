@@ -9,7 +9,7 @@
 
 > Aqui vai estar tudo sobre nosso projeto, e conforme ele avança iremos atualizar tudo aqui.
 
-**Updates**
+##Updates##
 - [x] Tela Newsletter (Pop-Up).
 - [x] Formulários Dinâmicos.
 - [X] Carrossel Dinâmico.
@@ -27,4 +27,4 @@
 6. JavaScript II.
 7. Banco de Dados I.
 8. Banco de Dados II.
-9. 
+
