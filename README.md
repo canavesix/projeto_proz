@@ -4,7 +4,7 @@
 
 [Bem-vindo](#bem-vindo) |
 [Updates](#ultimos-updates) |
-[Módulos](#modulos) 
+[Módulos](#módulos) 
 
 
 > Aqui vai estar tudo sobre nosso projeto, e conforme ele avança iremos atualizar tudo aqui.
