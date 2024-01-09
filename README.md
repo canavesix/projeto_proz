@@ -2,14 +2,14 @@
 
 ## Bem vindo ## 
 
-[Bem-vindo] (#bem-vindo) |
+[Bem-vindo](#bem-vindo) |
 [Updates](#ultimos-updates) |
 [Módulos](#modulos) 
 
 
 > Aqui vai estar tudo sobre nosso projeto, e conforme ele avança iremos atualizar tudo aqui.
 
-**Ultimos updates**
+**Updates**
 - [x] Tela Newsletter (Pop-Up).
 - [x] Formulários Dinâmicos.
 - [X] Carrossel Dinâmico.
