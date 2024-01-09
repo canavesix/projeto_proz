@@ -1,8 +1,8 @@
 ![Raíz Café](https://s3.amazonaws.com/joy-class/production/instances/12de7cca531c4dbdb6e42c937f21c1a81703272239039.png)
 
-## Bem vindo ao nosso projeto desenvolvido no curso com foco em **FRONT END.** ## 
+## Bem vindo ## 
 
-[Bem Vindo] (#bem-vindo-ao-nosso-projeto-desenvolvido-no-curso-com-foco-em-front-end) |
+[Bem-vindo] (#bem-vindo) |
 [Updates](#ultimos-updates) |
 [Módulos](#modulos) 
 
