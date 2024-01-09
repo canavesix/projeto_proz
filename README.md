@@ -4,7 +4,7 @@
 
 [Bem Vindo] (#bem-vindo-ao-nosso-projeto-desenvolvido-no-curso-com-foco-em-front-end) |
 [Updates](#ultimos-updates) |
-[Módulos](#modulos) | 
+[Módulos](#modulos) 
 
 
 > Aqui vai estar tudo sobre nosso projeto, e conforme ele avança iremos atualizar tudo aqui.
