@@ -3,7 +3,7 @@
 ## Bem vindo ## 
 
 [Bem-vindo](#bem-vindo) |
-[Updates](#ultimos-updates) |
+[Updates](#updates) |
 [Módulos](#módulos) 
 
 
