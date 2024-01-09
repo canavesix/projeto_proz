@@ -2,21 +2,18 @@
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
- }
+}
 
-
- .logo img {
+.logo img {
   width: 120px;
   padding-top: 30px;
   padding-left: 22px;
-  
 }
 
 .navbar {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  
 }
 
 .navbar a {
@@ -27,7 +24,6 @@
   padding-top: 80px;
   transition: background-color 0.3s;
   font-family: poppins;
-  
 }
 
 .navbar a:hover {
@@ -100,11 +96,7 @@ label {
   cursor: pointer;
 }
 
-
-/******** fim estilos pop up ********/
-
-
-/************* Inicio estilização HEADER *********/ 
+/******** Estilização HEADER ********/ 
 
 header {
   background-color: #511111;
@@ -129,19 +121,12 @@ a {
   color: #ffff;
 }
 
-/********* fim estilização header ***********/ 
-
-
-
-/***** Inicio estilização main ********/
+/******** Estilização main ********/
 
 body {
-  
-   margin: 0;
-   background-color: #D9D9D9
+  margin: 0;
+  background-color: #D9D9D9;
 }
-
-
 
 .section-title {
   padding: 10px;
@@ -158,7 +143,6 @@ body {
   font-weight: bold;
   text-align: left;
   margin-bottom: 5px;
-  
 }
 
 .banner {
@@ -170,26 +154,9 @@ body {
 }
 
 .banner-image {
-   justify-content: flex-end;
-   padding: 70px;
-
-
+  justify-content: flex-end;
+  padding: 70px;
 }
-
-/* .banner-img {
-  max-width: 100px; 
-  height: auto;
-  margin-left: 5px; 
-  opacity: 0;
-  transition: opacity 2s ease-in-out; 
-} */
-
-/* .banner-text {
-  width: 50%;
-  margin-left: 50px;
-} */
-
-/********* Estilização produtos*********/
 
 .slide-home {
   display: flex;
@@ -215,12 +182,7 @@ body {
   max-height: 400px; 
 }
 
-
-
-
-
-
-/*****Estilização do footer ********/
+/******** Estilização footer ********/
 
 footer {
   text-align: center;
@@ -237,13 +199,11 @@ footer p {
   padding-top: 10px;
 }
 
-
 .socialmedias {
   margin-top: 30px;
   display: flex;
   justify-content: center; 
   align-items: center;
-   
 }
 
 .socialmedias img {
@@ -251,6 +211,3 @@ footer p {
   height: 30px;
   margin: 0 5px; 
 }
-
-
-

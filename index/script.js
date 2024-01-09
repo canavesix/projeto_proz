@@ -19,15 +19,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // Enviar formulário da newsletter (no popup)
-        let popupNewsletterForm = document.getElementById('popupNewsletterForm');
-        popupNewsletterForm.addEventListener('submit', function (event) {
+    let popupNewsletterForm = document.getElementById('popupNewsletterForm');
+    popupNewsletterForm.addEventListener('submit', function (event) {
         event.preventDefault(); 
 
         let nameNewsInput = document.getElementById("nameNews");
-        let nameValue = nameNewsInput.value.trim(); //esse "trim()"" serve para remover espaços em branco que o usuário pode colocar sem querer
-        
+        let nameValue = nameNewsInput.value.trim(); //esse "trim()" serve para remover espaços em branco que o usuário pode colocar sem querer
 
-        // essa função é a mesma que tem na tela de suporte, pra não deixar passar nome com menos de 3 caracters e nem com números
+        // essa função é a mesma que tem na tela de suporte, pra não deixar passar nome com menos de 3 caracteres e nem com números
         if (nameValue.length < 3 || /\d/.test(nameValue)) {
             if (nameValue.length < 3) {
                 alert('Por favor, insira um nome com pelo menos 3 caracteres.');
@@ -42,15 +41,14 @@ document.addEventListener('DOMContentLoaded', function () {
         popup.style.display = 'none';
     });
 
-
+    // Carrossel
     $(document).ready(function(){
         $('.slick-carousel').slick({
-          
-          slidesToShow: 1,
-          autoplay: true,
-          autoplaySpeed: 4000,
-          arrows: true,
-          dots: true
+            slidesToShow: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: true,
+            dots: true
         });
     });
 });

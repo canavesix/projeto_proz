@@ -1,117 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type=text/css href="../index/style.css">
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="script.js"></script>
- 
-  <title>RAIZ CAFÉ - COFFEE SHOP</title>
-  <link rel="icon" href="\assets\LOGOTIPO.png" type="image/png">
-</head>
-<body> 
-  <section>
-  <!-- O popup -->
-  <div id="popup" class="popup">
-
-  <div class="popup-content">
-   <div class="popup-header">
-   <span class="close" id="closePopupBtn">&times;</span>
-   <h2>Inscreva-se na nossa Newsletter</h2> 
-   <p>E fique por dentro de tudo que fala sobre café.</p>
-  </div>  
-
-  <!-- Formulário de inscrição -->
-  <form action="" id="popupNewsletterForm">
-  <!--Comentário de texte de versionamento-->
-
-  <label for="nameNews">Nome:</label> 
-  <input type="text" id="nameNews" name="nameNews" placeholder="Nome">
-  <p id="nameNews-helper"></p>
-
-  <label for="emailNews">E-mail:</label>
-  <input type="email" id="emailNews" name="emailNews" placeholder="E-mail" >
-  <p id="emailNews-helper"></p>
-  <input type="submit" value="QUERO">
-  
-  </form>
-  
-  </div>
-  </div>
-  </section>
-  
-  <header>
-    <span class="logo">
-      <a href="\index\index.html">
-      <img src="\assets\logo.png" alt="Logo raíz café">
-      </a>
-    </span>
-    <div class="navbar">
-      <a href="\index\index.html"> Home </a> 
-      <a href="\catalogo\catalogo.html"> Catálogo </a> 
-      <a href="\blog\blog.html"> Blog </a> 
-      <a href="\sobrenos\sobre.html"> Sobre  </a>
-      <a href="\suporte\suporte.html"> Suporte </a>
-  </div>
-
-</header>
-
-
-  <div class="banner">
-    <div class="banner-text">
-      <p class="section-title">Raiz Café</p>
-      <p class="section-subtitle">Agricultura familiar</p>
-      <img src="\assets\logo-banner.png" alt="logo Raiz café" width="">
-    </div>  
-
-    <div class="banner-image">
-    <img src="\assets\layoutprodutos.png" alt="embalagem de café ilustrada">
-    </div>
-  </div>
-
-
-  
-  <div class="slick-carousel">
-
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type=text/css href="../index/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="script.js"></script>
+    <title>RAIZ CAFÉ - COFFEE SHOP</title>
+    <link rel="icon" href="\assets\LOGOTIPO.png" type="image/png">
+  </head>
+  <body> 
     <section>
-        <div class="slide-home">
-        <img src="\assets\banner1.svg" class="cafe1">
+      <!-- O popup -->
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <div class="popup-header">
+            <span class="close" id="closePopupBtn">&times;</span>
+            <h2>Inscreva-se na nossa Newsletter</h2> 
+            <p>E fique por dentro de tudo que fala sobre café.</p>
+          </div>  
+          <!-- Formulário de inscrição -->
+          <form action="" id="popupNewsletterForm">
+            <!--Comentário de texte de versionamento-->
+            <label for="nameNews">Nome:</label> 
+            <input type="text" id="nameNews" name="nameNews" placeholder="Nome">
+            <p id="nameNews-helper"></p>
+            <label for="emailNews">E-mail:</label>
+            <input type="email" id="emailNews" name="emailNews" placeholder="E-mail" >
+            <p id="emailNews-helper"></p>
+            <input type="submit" value="QUERO">
+          </form>
         </div>
-    </section>
-
-    <section>
-        <div class="slide-home">
-        <img src="\assets\banner2.svg" class="cafe1">
-        </div>
-    </section>
-    
-    <section>
-      <div class="slide-home">
-      <img src="\assets\banner3.svg" class="cafe1">
       </div>
-  </section>
-
-</div>
-
-<footer>
-  <div>
-      <p>Raíz Café</p>
-      <p>©️ Todos Direitos Reservados 2023</p>
-      <div class="socialmedias">
+    </section>
+    <header>
+      <span class="logo">
+        <a href="\index\index.html">
+          <img src="\assets\logo.png" alt="Logo raíz café">
+        </a>
+      </span>
+      <div class="navbar">
+        <a href="\index\index.html"> Home </a> 
+        <a href="\catalogo\catalogo.html"> Catálogo </a> 
+        <a href="\blog\blog.html"> Blog </a> 
+        <a href="\sobrenos\sobre.html"> Sobre  </a>
+        <a href="\suporte\suporte.html"> Suporte </a>
+      </div>
+    </header>
+    <div class="banner">
+      <div class="banner-text">
+        <p class="section-title">Raiz Café</p>
+        <p class="section-subtitle">Agricultura familiar</p>
+        <img src="\assets\logo-banner.png" alt="logo Raiz café" width="">
+      </div>  
+      <div class="banner-image">
+        <img src="\assets\layoutprodutos.png" alt="embalagem de café ilustrada">
+      </div>
+    </div>
+    <div class="slick-carousel">
+      <section>
+        <div class="slide-home">
+          <img src="\assets\banner1.svg" class="cafe1">
+        </div>
+      </section>
+      <section>
+        <div class="slide-home">
+          <img src="\assets\banner2.svg" class="cafe1">
+        </div>
+      </section>
+      <section>
+        <div class="slide-home">
+          <img src="\assets\banner3.svg" class="cafe1">
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div>
+        <p>Raíz Café</p>
+        <p>©️ Todos Direitos Reservados 2023</p>
+        <div class="socialmedias">
           <a href="https://www.facebook.com/" target="_blank"><img src="\assets\faceVector.png"></a> 
           <a href="https://www.instagram.com/" target="_blank"><img src="\assets\instaVector.png"></a> 
+        </div>
       </div>
-  </div>
-</footer>
-
-
-</body>
+    </footer>
+  </body>
 </html>
