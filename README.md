@@ -2,9 +2,9 @@
 
 ## Bem vindo 🌟 ## 
 
-[Bem-vindo](#bem-vindo) |
-[Updates](#updates) |
-[Módulos](#módulos) |
+[Bem-vindo](#bem-vindo-) |
+[Updates](#updates-) |
+[Módulos](#módulos-) |
 [Ferramentas](#ferramentas-utilizadas-%EF%B8%8F)
 
 
