@@ -5,7 +5,7 @@
 [Bem-vindo](#bem-vindo) |
 [Updates](#updates) |
 [Módulos](#módulos) |
-[Ferramentas](#ferramentas-utilizadas)
+[Ferramentas](#ferramentas-utilizadas-%EF%B8%8F)
 
 
 > Aqui vai estar tudo sobre nosso projeto, e conforme ele avança iremos atualizar tudo aqui.
