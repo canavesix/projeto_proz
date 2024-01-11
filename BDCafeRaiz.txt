@@ -79,3 +79,4 @@ SELECT * FROM Cliente
 SELECT * FROM Pedido
 
 	-- SELECIONE DE ACORDO COM A NECESSIDADE DA CONSULTA --
+    -- TESTES EFETUADOS EM: https://sqliteonline.com/ --
