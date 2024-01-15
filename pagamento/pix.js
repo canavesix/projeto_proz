@@ -1,4 +1,3 @@
-
 function exibirImagem() {
   
   var container = document.getElementById('imagemContainer');
@@ -28,11 +27,14 @@ function exibirImagem() {
   }, 4000); 
 }
 
-// Função para fechar a imagem
+
 function fecharImagem() {
   var container = document.getElementById('imagemContainer');
-  container.innerHTML = ''; 
+  container.innerHTML = '';
+  window.location.href = '/catalogo/catalogo.html'; // Redireciona para catalogo após fechar a imagem
 }
 
 
+
 document.getElementById('botaoImagem').onclick = exibirImagem;
+
