@@ -177,3 +177,66 @@ footer p {
     height: 30px;
     margin: 0 5px;
 }
+
+/* estilização do popup pagamento */
+.produto-card {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    border-radius: 4px;
+    background: rgba(81, 17, 17, 0.9);
+}
+
+ .produto-card .card {
+    text-align: center;
+}
+  
+  .produto-card h2 {
+    color: #ffffff;
+    font-family: Amatic sc;
+}
+
+.produto-card h3 {
+    color: #ffffff;
+    font-family: poppins;
+}
+  
+  .produto-card p {
+    color: #ffffff;
+    text-align: center;
+}
+  
+  .produto-card #imagemContainer img {
+    max-width: 100%;
+    height: auto;
+}
+  
+  .produto-card button {
+    background-color: #084829;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+    padding: 10px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Poppins';
+    margin-top: 5px;
+    display: inline-block; 
+    text-align: center; 
+    text-decoration: none;
+}
+  
+  .produto-card button:hover {
+    background-color: #2c5d44;
+    transform: scale(1.1);
+}
+  
+  
