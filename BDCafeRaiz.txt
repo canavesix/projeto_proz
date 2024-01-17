@@ -2,8 +2,8 @@
 
 -- Criação da tabela de usuários
 CREATE TABLE Usuarios (
-    UsuarioID SERIAL PRIMARY KEY,	-- Coluna ou conjunto de colunas que identifica exclusivamente cada registro numa tabela
-    Nome VARCHAR(50) NOT NULL,	-- Informações não podem conter valores nulos
+    UsuarioID SERIAL PRIMARY KEY,	    -- Coluna ou conjunto de colunas que identifica exclusivamente cada registro numa tabela
+    Nome VARCHAR(50) NOT NULL,	        -- Informações não podem conter valores nulos
     Email VARCHAR(100) UNIQUE NOT NULL	-- Uma restrição (Constraint). Garante que a coluna numa tabela seja distinta, ou seja, sem duplicatas. --
 );
 
@@ -15,7 +15,7 @@ INSERT INTO Usuarios (Nome, Email) VALUES	-- Adicionar valores, de acordo com se
     ('Gustavo Canavesi', 'gustavoc@email.com');
 
 -- Consulta de informações 
-SELECT * FROM Usuarios;	-- Todas informações
+SELECT * FROM Usuarios;	    -- Todas informações
 SELECT Nome FROM Usuarios;	-- Apenas usuarios cadastrados
 SELECT Email FROM Usuarios;	-- Apenas E-mails cadastrados
 
@@ -31,11 +31,11 @@ SELECT * FROM Usuarios WHERE Email = 'Dinea Reis';
 
 -- Tabela de usuários com informações estendidas
 CREATE TABLE IF NOT EXISTS Contato (	-- Executa uma verificação se a tabela ainda não foi criada;
-    ContatoID SERIAL PRIMARY KEY,	-- Coluna ou conjunto de colunas que identifica exclusivamente cada registro numa tabela;
-    Nome VARCHAR(50) NOT NULL,	-- Informações não podem conter valores nulos;
+    ContatoID SERIAL PRIMARY KEY,	    -- Coluna ou conjunto de colunas que identifica exclusivamente cada registro numa tabela;
+    Nome VARCHAR(50) NOT NULL,	        -- Informações não podem conter valores nulos;
     Email VARCHAR(100) UNIQUE NOT NULL,	-- Informações não podem conter valores nulos / Uma restrição (Constraint);
-    Celular VARCHAR(15) NOT NULL, -- Assumindo um formato de número de celular, garantindo que as informações não podem conter valores nulos;
-    Mensagem VARCHAR(1000) NOT NULL	-- Informações não podem conter valores nulos;
+    Celular VARCHAR(15) NOT NULL,       -- Assumindo um formato de número de celular, garantindo que as informações não podem conter valores nulos;
+    Mensagem VARCHAR(1000) NOT NULL	    -- Informações não podem conter valores nulos;
 );
 
 -- Inserir dados de exemplo
