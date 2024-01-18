@@ -214,11 +214,11 @@ footer p {
   margin: 0 5px; 
 }
 
-/* Consulta de Mídia para telas menores */
+/* Config de Mídia para telas menores */
 @media only screen and (max-width: 768px) {
   .navbar {
     flex-direction: column;
-    justify-content: center; /* Centraliza itens na navbar em dispositivos menores */
+    justify-content: center; 
   }
 
   .navbar a {
@@ -228,7 +228,7 @@ footer p {
   }
 
   .banner {
-    padding: 10px; /* Ajuste de espaçamento em dispositivos menores */
+    padding: 10px; 
   }
 
   .banner-image {
@@ -239,13 +239,13 @@ footer p {
     display: flex;
     flex-direction: colum;
     align-items: center;
-    margin-top: 10px; /* Reduz a margem superior em dispositivos menores */
+    margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
   }
 
   .footer {
-    padding: 10px; /* Ajuste de espaçamento em dispositivos menores */
+    padding: 10px; 
   }
 
   .socialmedias {
