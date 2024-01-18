@@ -3,18 +3,31 @@
 ## Bem vindo 🌟 ## 
 
 [Bem-vindo](#bem-vindo-) |
+[Desenvolvedores](#desenvolvedores) |
 [Updates](#updates-) |
 [Módulos](#módulos-) |
 [Ferramentas](#ferramentas-utilizadas-%EF%B8%8F)
 
-
 > Aqui vai estar tudo sobre nosso projeto, e conforme ele avança iremos atualizar tudo aqui.
+
+## Desenvolvedores 👨‍💻 👩‍💻 👨‍💻 👩‍💻 ##
+
+> Ana Paula : https://github.com/Pandora-virus
+
+> Dinea Reis : https://github.com/DineaReis
+
+> Gustavo Canavesi : https://github.com/canavesix
+
+> Rocha : https://github.com/Rocha527 
+
 
 ## Updates 🔃 ##
 - [x] Tela Newsletter (Pop-Up).
 - [x] Formulários Dinâmicos.
 - [X] Carrossel Dinâmico.
-- [ ] Tela Carrinho/Pagamento.
+- [X] Tela de Pagamento.
+- [X] Função de Busca implementada na tela Blog 🔍
+- [ ] Renderizando novas ideias para o futuro ⌛...
 
 
 ## Módulos 📚 ##
