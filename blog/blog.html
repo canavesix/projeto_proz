@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,123 +11,109 @@
   <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
   <body>
     <header>
-        <div class="logo">
-        <a class="logo-link" href="/index/index.html">
-        <img src="\assets\logo.png">
-        </a>
-
-    <div class="navbar">
-            <a href="\index\index.html"> Home </a> 
-            <a href="\catalogo\catalogo.html"> Catálogo </a> 
-            <a href="\blog\blog.html"> Blog </a> 
-            <a href="\sobrenos\sobre.html"> Sobre  </a>
-            <a href="\suporte\suporte.html"> Suporte </a>
-        </div>
+    <div class="logo">
+      <a class="logo-link" href="/index/index.html">
+      <img src="\assets\logo.png">
+      </a>
+      <div class="navbar">
+        <a href="\index\index.html"> Home </a> 
+        <a href="\catalogo\catalogo.html"> Catálogo </a> 
+        <a href="\blog\blog.html"> Blog </a> 
+        <a href="\sobrenos\sobre.html"> Sobre  </a>
+        <a href="\suporte\suporte.html"> Suporte </a>
+      </div>
     </div>
     </header>
-    
-    <h2>Catálogo</h2>
-    
-    <div class="geral">
-
-    <section>
-
-
-  <div class="carousel-container">
-    <button class="carousel-button prev-button" onclick="prevSlide()">❮</button>
+    <h2>Blog</h2>
+    <div class="carousel-container">
     <div class="image-list">
-      <!-- Adicione imagens aqui -->
-      <img class="image-item" src="/assets/banner-blog.png" alt="Imagem 2">
-      <img class="image-item" src="/assets/banner.png" alt="Imagem 2">
-      <img class="image-item" src="/assets//footer.png" alt="Imagem 3">
-      <!-- Adicione mais imagens conforme necessário -->
+      <img class="image-item" src="/assets/banner-blog.png" alt="">
+      <img class="image-item" src="/assets/banner.png" alt="">
+      <img class="image-item" src="/assets//footer.png" alt="">
     </div>
-    <button class="carousel-button next-button" onclick="nextSlide()">❯</button>
   </div>
-  
-  
-  <!-- Referencie o novo arquivo JavaScript -->
   <script src="/blog/blogJavaScript.js"></script>
-  
-
-  <br>
-  <br>
-  <br>
-  <br>
-
-
-    <h1>Faça sua pesquisa nos artigos</h1>
-
-  <!-- Adicione um campo de pesquisa -->
+  <h1>Faça sua pesquisa nos artigos</h1>
   <input type="text" id="searchBox" onkeydown="handleKeyPress(event)" placeholder="Procurar...">
-  <td>&nbsp;</td>
+  <br>
   <button id="searchButton" onclick="searchPage()">Pesquisar</button>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-
-  <table>
-    <!-- Conteúdo dos artigos aqui -->
-
-    <tr>
-      <td id="Artigo1"> <img src="/assets/gulaDoCafe.png" alt="Artigo 1"></td>
-      <td id="Artigo2"> <img src="/assets/dicasParaFazerCafe.png" alt="Artigo 2"></td>
-      <td id="Artigo3"> <img src="/assets/combinacoesPerfeitas.png" alt="Artigo 3"></td>
-    </tr>
-
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-
-    <tr>
-      <td id="Artigo4"><img src="/assets/Artigo4.png" alt="Artigo 4"></td>
-      <td id="Artigo5"><img src="/assets/artigo5.png" alt="Artigo 5"></td>
-      <td id="Artigo6"><img src="/assets/artigo6.png" alt="Artigo 6"></td>
-    </tr>
-
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-
-  </table>
-  
-
-  <footer>
-    <div>
-        <p>Raíz Café</p>
-        <p>©️ Todos Direitos Reservados 2023</p>
-        <div class="socialmedias">
-            <a href="https://www.facebook.com/" target="_blank"><img src="\assets\faceVector.png"></a> 
-            <a href="https://www.instagram.com/" target="_blank"><img src="\assets\instaVector.png"></a> 
+    <div class="artigos-container">
+      <div class="artigos">
+        <section>
+          <div class="artigo-container">
+            <div class="artigo">
+              <div class="cafe-img">
+                <img src="/assets/gulaDoCafe.png" class="artigosGeral">
+                <h3>Guia do Café: Tipos, Torra e Moagem:</h3>
+                <p>Conheça os diferentes tipos de café, métodos de torra e como a moagem afeta o sabor.</p>
+              </div>
+            </div>
+          </div>
         </div>
+    </section>
+      
+      <section>
+          <div class="artigo-container">
+            <div class="artigo">
+              <div class="cafe-img">
+                <img src="/assets/dicasParaFazerCafe.png" class="artigosGeral">
+                <h3>Dicas para fazer Café Perfeito em Casa:</h3>
+                <p>Instruções passo a passo sobre como preparar café de qualidade em casa, incluindo métodos de preparo como a prensa francesa.</p>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section>
+        <div class="artigo-container">
+          <div class="artigo">
+            <div class="cafe-img">
+              <img src="/assets/combinacoesPerfeitas.png" class="artigosGeral">
+              <h3>Combinações Perfeitas:</h3>
+              <p>Sugestões de combinações para acompanhar seu café.</div></p>
+            </div>
+          </div>
+      </section>
+      <section>
+        <div class="artigo-container">
+          <div class="artigo">
+            <div class="cafe-img">
+              <img src="/assets/Artigo4.png" class="artigosGeral">
+              <h3>Processos de preparação de café:</h3>
+              <p>Descrição dos métodos de cultivo, colheita e processamento do café, desde a plantação até a preparação para consumo, com ênfase nas técnicas variadas.</div></p>
+            </div>
+          </div>
+      </section>
+      <section>
+        <div class="artigo-container">
+          <div class="artigo">
+            <div class="cafe-img">
+              <img src="/assets/artigo5.png" class="artigosGeral">
+              <h3>Café e Sustentabilidade:</h3>
+              <p>Discussão sobre práticas sustentáveis na indústria do café, como comércio justo, agricultura orgânica e iniciativas que visam preservar o meio ambiente.</div></p>
+            </div>
+          </div>
+      </section>
+      <section>
+        <div class="artigo-container">
+          <div class="artigo">
+            <div class="cafe-img">
+              <img src="/assets/artigo6.png" class="artigosGeral">
+              <h3>Rituais de Café ao Redor do Mundo:</h3>
+              <p>Visão global das diversas tradições de preparo e consumo de café em diferentes culturas, enfatizando os rituais únicos associados a essa bebida em todo o mundo.</div></p>
+            </div>
+          </div>
+      </section>
     </div>
+  </div>
+<footer>
+  <div>
+    <p>Raíz Café</p>
+    <p>©️ Todos Direitos Reservados 2023</p>
+      <div class="socialmedias">
+        <a href="https://www.facebook.com/" target="_blank"><img src="\assets\faceVector.png"></a> 
+        <a href="https://www.instagram.com/" target="_blank"><img src="\assets\instaVector.png"></a> 
+      </div>
+  </div>
 </footer>
 </body>
-
 </html>
