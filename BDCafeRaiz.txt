@@ -1,82 +1,54 @@
--- Tabela para armazenar informações sobre os produtos de café
-CREATE TABLE Fornecedor (
-    FornecedorID INT PRIMARY KEY,
-    Nome VARCHAR(100),
-    Localizacao VARCHAR(255),
-    Contato VARCHAR(50)
+-- NEWSLETTER --
+
+-- Criação da tabela de usuários
+CREATE TABLE Usuarios (
+    UsuarioID SERIAL PRIMARY KEY,	    -- Coluna ou conjunto de colunas que identifica exclusivamente cada registro numa tabela
+    Nome VARCHAR(50) NOT NULL,	        -- Informações não podem conter valores nulos
+    Email VARCHAR(100) UNIQUE NOT NULL	-- Uma restrição (Constraint). Garante que a coluna numa tabela seja distinta, ou seja, sem duplicatas. --
 );
 
-CREATE TABLE Produto (
-    ProdutoID INT PRIMARY KEY,	-- 255 = max caracteres
-    Nome VARCHAR(255),
-    Tipo VARCHAR(50),
-    Origem VARCHAR(100),
-    FornecedorID INT,
-    FOREIGN KEY (FornecedorID) REFERENCES Fornecedor(FornecedorID)
+-- Inserir dados de exemplo
+INSERT INTO Usuarios (Nome, Email) VALUES	-- Adicionar valores, de acordo com sequência definida
+    ('Fábio Rocha', 'fabioR@email.com'),
+    ('Dinea Reis', 'dineaR@email.com'),
+    ('Ana Paula Dossi', 'anaD@email.com'),
+    ('Gustavo Canavesi', 'gustavoc@email.com');
+
+-- Consulta de informações 
+SELECT * FROM Usuarios;	    -- Todas informações
+SELECT Nome FROM Usuarios;	-- Apenas usuarios cadastrados
+SELECT Email FROM Usuarios;	-- Apenas E-mails cadastrados
+
+-- Pesquisar usuários por nome
+SELECT * FROM Usuarios WHERE Nome = 'Fábio Rocha';
+
+-- Pesquisar usuários por email
+SELECT * FROM Usuarios WHERE Email = 'Dinea Reis';
+
+--------------------------------------------------------------------------
+
+-- SUPORTE --
+
+-- Tabela de usuários com informações estendidas
+CREATE TABLE IF NOT EXISTS Contato (	-- Executa uma verificação se a tabela ainda não foi criada;
+    ContatoID SERIAL PRIMARY KEY,	    -- Coluna ou conjunto de colunas que identifica exclusivamente cada registro numa tabela;
+    Nome VARCHAR(50) NOT NULL,	        -- Informações não podem conter valores nulos;
+    Email VARCHAR(100) UNIQUE NOT NULL,	-- Informações não podem conter valores nulos / Uma restrição (Constraint);
+    Celular VARCHAR(15) NOT NULL,       -- Assumindo um formato de número de celular, garantindo que as informações não podem conter valores nulos;
+    Mensagem VARCHAR(1000) NOT NULL	    -- Informações não podem conter valores nulos;
 );
 
--- Tabela para armazenar informações sobre os clientes
-CREATE TABLE Cliente (
-    ClienteID INT PRIMARY KEY,
-    Nome VARCHAR(100),
-    Endereco VARCHAR(255),
-    Email VARCHAR(100)
-);
+-- Inserir dados de exemplo
+INSERT INTO Contato (Nome, Email, Celular, Mensagem) VALUES	-- Adicionar valores, de acordo com sequência definida
+    ('Fábio Rocha', 'fabioR@email.com', '+5511999999999', 'Esta é uma mensagem de Fábio Rocha.'),
+    ('Gustavo Canavesi', 'gustavoC@email.com', '+5511888888888', 'Esta é uma mensagem de Gustavo Canavesi'),
+    ('Ana Paula Dossi', 'anaD@email.com', '+5511777777777', 'Esta é uma mensagem de Ana Paula.');
 
--- Tabela para armazenar informações sobre os pedidos
-CREATE TABLE Pedido (
-    PedidoID INT PRIMARY KEY,
-    DataPedido DATE,
-    Status VARCHAR(50),
-    ClienteID INT,
-    FOREIGN KEY (ClienteID) REFERENCES Cliente(ClienteID)
-);
-
--- Tabela de associação entre produtos e pedidos para representar os itens de pedido
-CREATE TABLE PedidoProduto (
-    PedidoID INT,
-    ProdutoID INT,
-    Quantidade INT,
-    Preco DECIMAL(10, 2),
-    PRIMARY KEY (PedidoID, ProdutoID),
-    FOREIGN KEY (PedidoID) REFERENCES Pedido(PedidoID),
-    FOREIGN KEY (ProdutoID) REFERENCES Produto(ProdutoID)
-);
+-- Pesquisar todos os contatos
+SELECT * FROM Contato;
+SELECT Celular From Contato;
 
 
--- INSERÇÃO DE DADOS PARA TESTES --
-
--- Fornecedores
-INSERT INTO Fornecedor (FornecedorID, Nome, Localizacao, Contato)
-VALUES
-    (1, 'Fornecedor A', 'Local A', 'Contato A'),
-    (2, 'Fornecedor B', 'Local B', 'Contato B');
-
--- Produtos
-INSERT INTO Produto (ProdutoID, Nome, Tipo, Origem, Torrefacao, FornecedorID)
-VALUES
-    (101, 'Café A', 'Arábica', 'Origem 1', 'Clara', 1),
-    (102, 'Café B', 'Robusta', 'Origem 2', 'Escura', 2);
-
--- Clientes
-INSERT INTO Cliente (ClienteID, Nome, Endereco, Email)
-VALUES
-    (201, 'Cliente 1', 'Endereco 1', 'cliente1@email.com'),
-    (202, 'Cliente 2', 'Endereco 2', 'cliente2@email.com');
-
--- Pedidos
-INSERT INTO Pedido (PedidoID, DataPedido, Status, ClienteID)
-VALUES
-    (301, '2024-01-10', 'Pendente', 201),
-    (302, '2024-01-11', 'Entregue', 202);
-
-    
-    -- TESTES PARA CONSULTA DE INSERÇÃO --
-    
-SELECT * FROM Fornecedor
-SELECT * FROM Produto
-SELECT * FROM Cliente
-SELECT * FROM Pedido
 
 	-- SELECIONE DE ACORDO COM A NECESSIDADE DA CONSULTA --
     -- TESTES EFETUADOS EM: https://sqliteonline.com/ --
