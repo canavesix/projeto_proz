@@ -20,11 +20,13 @@
 
 > Rocha : https://github.com/Rocha527 
 
+
 ## Updates 🔃 ##
 - [x] Tela Newsletter (Pop-Up).
 - [x] Formulários Dinâmicos.
 - [X] Carrossel Dinâmico.
 - [X] Tela de Pagamento.
+- [X] Função de Busca implementada na tela Blog 🔍
 - [ ] Renderizando novas ideias para o futuro ⌛...
 
 
