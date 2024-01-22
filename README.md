@@ -12,9 +12,9 @@
 
 ## Desenvolvedores 👨‍💻 👩‍💻 👨‍💻 👩‍💻 ##
 
-> Ana Paula : https://github.com/Pandora-virus
+> Ana Paula : https://github.com/Pandora-virus | https://www.linkedin.com/in/ana-paula-dossi-2776621a8/
 
-> Dinea Reis : https://github.com/DineaReis
+> Dinea Reis : https://github.com/DineaReis | https://www.linkedin.com/in/dinea-reis-8b36491a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
 
 > Gustavo Canavesi : https://github.com/canavesix | https://www.linkedin.com/in/gustavo-canavesi/
 
