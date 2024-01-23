@@ -12,22 +12,27 @@
 
 ## Desenvolvedores 👨‍💻 👩‍💻 👨‍💻 👩‍💻 ##
 
-> Ana Paula : https://github.com/Pandora-virus
+> Ana Paula : https://github.com/Pandora-virus | https://www.linkedin.com/in/ana-paula-dossi-2776621a8/
 
-> Dinea Reis : https://github.com/DineaReis
+> Dinea Reis : https://github.com/DineaReis | https://www.linkedin.com/in/dinea-reis-8b36491a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
 
-> Gustavo Canavesi : https://github.com/canavesix
+> Gustavo Canavesi : https://github.com/canavesix | https://www.linkedin.com/in/gustavo-canavesi/
 
-> Rocha : https://github.com/Rocha527 
+> Rocha : https://github.com/Rocha527 | https://www.linkedin.com/in/fábio-rocha-762a91192/
 
 
 ## Updates 🔃 ##
+### Atualmente estamos na Versão 1 do projeto, ele conta com essas funcionalidades abaixo: ###
+
 - [x] Tela Newsletter (Pop-Up).
 - [x] Formulários Dinâmicos.
 - [X] Carrossel Dinâmico.
 - [X] Tela de Pagamento.
 - [X] Função de Busca implementada na tela Blog 🔍
 - [ ] Renderizando novas ideias para o futuro ⌛...
+- [ ] Tela de Carrinho 🛒
+- [ ] Outras formas de pagamento 💵💳
+- [ ] Responsivo para diversas telas, incluindo mobile 📱
 
 
 ## Módulos 📚 ##

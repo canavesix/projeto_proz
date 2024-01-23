@@ -1,7 +1,7 @@
 const usernameInput = document.getElementById("username");
 const usernameLabel = document.querySelector('label[for="username"]');
 const usernameHelper = document.getElementById("username-helper");
-const apenasLetras = /^[A-Za-z]+$/;
+const apenasLetras = /^[A-Za-z ]+$/;
 
 const useremailInput = document.getElementById("email");
 const useremailLabel = document.querySelector('label[for="email"]');
