@@ -6,8 +6,8 @@
 [Desenvolvedores](#desenvolvedores----) |
 [Updates](#updates-) |
 [Módulos](#módulos-) |
-[Tecnologias](#tecnologias-utilizadas-) |
-[Ferramentas](#ferramentas-utilizadas--)
+[Tecnologias](#tecnologias-utilizadas-%EF%B8%8F-%EF%B8%8F) |
+[Ferramentas](#ferramentas-utilizadas--%EF%B8%8F)
 
 > Aqui vai estar tudo sobre nosso projeto, e conforme ele avança iremos atualizar tudo aqui.
 
