@@ -3,11 +3,11 @@
 ## Bem vindo 🌟 ## 
 
 [Bem-vindo](#bem-vindo-) |
-[Desenvolvedores](#desenvolvedores) |
+[Desenvolvedores](#desenvolvedores----) |
 [Updates](#updates-) |
 [Módulos](#módulos-) |
-[Tecnologias](#ferramentas-utilizadas-%EF%B8%8F) |
-[Ferramentas]()
+[Tecnologias](#tecnologias-utilizadas-) |
+[Ferramentas](#ferramentas-utilizadas--)
 
 > Aqui vai estar tudo sobre nosso projeto, e conforme ele avança iremos atualizar tudo aqui.
 
