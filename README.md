@@ -32,6 +32,7 @@
 - [X] Função de Busca implementada na tela Blog 🔍
 - [ ] Renderizando novas ideias para o futuro ⌛...
 - [ ] Tela de Carrinho 🛒
+- [ ] Tela de Login.
 - [ ] Outras formas de pagamento 💵💳
 - [ ] Responsivo para diversas telas, incluindo mobile 📱
 
