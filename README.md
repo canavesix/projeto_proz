@@ -1,6 +1,6 @@
 ![Raíz Café](/assets/readme.png)
 
-## Bem vindo 🌟 ## 
+## Bem vindo 🌟 Para acessar o nosso projeto, clique [aqui](https://raizcafe.netlify.app/). ## 
 
 [Bem-vindo](#bem-vindo-) |
 [Desenvolvedores](#desenvolvedores----) |
