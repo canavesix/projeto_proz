@@ -6,7 +6,8 @@
 [Desenvolvedores](#desenvolvedores) |
 [Updates](#updates-) |
 [Módulos](#módulos-) |
-[Ferramentas](#ferramentas-utilizadas-%EF%B8%8F)
+[Tecnologias](#ferramentas-utilizadas-%EF%B8%8F) |
+[Ferramentas]()
 
 > Aqui vai estar tudo sobre nosso projeto, e conforme ele avança iremos atualizar tudo aqui.
 
@@ -47,6 +48,19 @@
 7. Banco de Dados I.
 8. Banco de Dados II.
 
-## Ferramentas Utilizadas 🛠️ ##
+## Tecnologias Utilizadas 🖥️ ⌨️ ##
 
-![JavaScript](https://img.shields.io/badge/JavaScript--yellow)  ![HTML](https://img.shields.io/badge/HTML-5-blue)  ![CSS](https://img.shields.io/badge/CSS-3-orange)
+[![JavaScript](https://img.shields.io/badge/JavaScript-yellow?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![HTML](https://img.shields.io/badge/HTML5-blue?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS](https://img.shields.io/badge/CSS3-orange?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=sql&logoColor=white)](https://en.wikipedia.org/wiki/SQL)
+
+
+## Ferramentas Utilizadas 🧰 🛠️ ##
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
+![SQL Online](https://img.shields.io/badge/SQL_Online-4479A1?style=for-the-badge&logo=sql&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+
